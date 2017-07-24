@@ -27,5 +27,16 @@ class MainHandler(webapp2.RequestHandler):
             'templates/moves.html')
         self.response.write(template.render())
 
+class FoodHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_environment.get_template(
+            'templates/food2.html')
+        self.response.write(template.render())
+class EventsHandler(webapp2.RequestHandler):
+    def get(self):
+            template= jinja_environment.get_template('templates/events.html')
+            self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),], debug=True)
+    ('/', MainHandler), ('/Events' , EventsHandler)]
+    , debug=True)
