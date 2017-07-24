@@ -28,6 +28,4 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-
-], debug=True)
+    ('/', MainHandler),], debug=True)
