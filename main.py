@@ -27,7 +27,14 @@ class MainHandler(webapp2.RequestHandler):
             'templates/moves.html')
         self.response.write(template.render())
 
+class FashionHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_environment.get_template(
+            'templates/Fashion.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
+    ('/Fashion.html', FashionHandler),
 
 ], debug=True)
