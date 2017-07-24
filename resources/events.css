@@ -1,0 +1,16 @@
+body
+{
+  background-color:  #3CC47C;
+  background-size: cover;
+
+}
+h1
+{ 
+  font-family: 'Boogaloo', cursive;
+  color: #FB6542;
+  font-size: 700%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px black;
+}
