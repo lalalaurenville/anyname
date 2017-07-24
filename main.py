@@ -33,8 +33,14 @@ class FashionHandler(webapp2.RequestHandler):
             'templates/Fashion.html')
         self.response.write(template.render())
 
+class FoodHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_environment.get_template(
+            'templates/food2.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/Fashion.html', FashionHandler),
-
+    ('/food', FoodHandler),
 ], debug=True)
