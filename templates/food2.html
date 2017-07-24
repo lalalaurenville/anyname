@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="food2.css"/>
+   <link rel="stylesheet" href="/resources/food2.css"/>
 <title> FOOD </title>
 </head>
 <body>
@@ -9,7 +9,42 @@
 <h1>Tasty Boston Delectable </h1>
 <p> Welcome to the one stop shop for all things tasty.</p>
 <p> Whether you're in boston for the weekend or for 4 year this will
-   be all you need to keep your bellies full and you're wallets fat </p>
+   be all you need to keep your bellies full and your wallets fat </p>
+
+
+   <div id="mySidenav" class="sidenav">
+     <a href="templates/tab1.html" id="about">Places To Go On A Budget</a>
+     <a href="#" id="blog">Top 5 Places to Go in Boston </a>
+     <a href="#" id="projects">Dessert and </a>
+
+
+
+<!---Slide show -->
+
+<h2 class="w3-center"> Boston's Tasty Delectables </h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+<img class="mySlides" src="http://lolagraceevents.com/wp-content/uploads/2016/07/WEB-FOOD-TRUCK-AWAY-CAFE.jpg" style="width:100%">
+<img class="mySlides" src="https://asiteofherown.files.wordpress.com/2013/03/2013-03-14-21-50-31.jpg" style="width:100%">
+<img class="mySlides" src="https://cdn.vox-cdn.com/thumbor/LXVRh3hlVkn1FiXLipW9VHtXFWE=/0x0:1008x756/1200x800/filters:focal(0x0:1008x756)/cdn.vox-cdn.com/uploads/chorus_image/image/48768351/12622219_1240019919345156_4572195489911403039_o.0.0.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+ var i;
+ var x = document.getElementsByClassName("mySlides");
+ for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+ }
+ myIndex++;
+ if (myIndex > x.length) {myIndex = 1}
+ x[myIndex-1].style.display = "block";
+ setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 </html>
