@@ -1,0 +1,22 @@
+body
+{
+  background-color:  #3CC47C;
+  background-image: url("https://media.giphy.com/media/W8FKqHAXTM3bW/source.gif");
+}
+h1
+{
+  color: #FB6542;
+  font-size: 700%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px black;
+}
+}
+h3
+{
+  text-align: center;
+  color: #FB6542;
+font-size: 400%;
+text-shadow: 2px 3px black;
+}
