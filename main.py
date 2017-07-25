@@ -47,6 +47,7 @@ class EventsHandler(webapp2.RequestHandler):
         template= jinja_environment.get_template(
             'templates/events.html')
         self.response.write(template.render())
+
 class ConcertsHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('templates/concerts.html')
@@ -59,6 +60,11 @@ class MoviesHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('templates/movies.html')
         self.response.write(template.render())
+
+class TabHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_environment.get_template('templates/tab1.html')
+        self.response.write(template.render())
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/Fashion.html', FashionHandler),
@@ -70,4 +76,5 @@ app = webapp2.WSGIApplication([
     ('/casual.html', CasualHandler),
     ('/fitness.html', FitnessHandler),
     ('/formal.html', FormalHandler),
+    ('/templates/tab1.html', TabHandler)
 ], debug=True)
