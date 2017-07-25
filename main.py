@@ -45,9 +45,18 @@ class EventsHandler(webapp2.RequestHandler):
             'templates/events.html')
         self.response.write(template.render())
 
+class TabHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_environment.get_template(
+            'templates/tab1.html')
+        self.response.write(template.render())
+
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/Fashion.html', FashionHandler),
     ('/food', FoodHandler),
-    ('/events.html', EventsHandler)
+    ('/events.html', EventsHandler),
+    ('/templates/tab1.html', TabHandler)
 ], debug=True)
