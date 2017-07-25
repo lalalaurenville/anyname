@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
@@ -45,10 +46,28 @@ div.text
 {
   float: left;
 }
+div.barfont
+{
+  font-family: "Raleway", sans-serif;
+  font-size: 200%
+}
 </style>
 <body>
-  <a href="http://localhost:10080/events.html">
-   <img src="http://wfarm2.dataknet.com/static/resources/icons/set52/ad752e7d.png" style="width:50px;height:50px;"></a>
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-wide w3-padding w3-card-2">
+      <a href="/" class="w3-bar-item w3-button"><img src="/resources/logo1.png" style="width:85px;"></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <div class="barfont"><a href="/food" class="w3-bar-item w3-button">Food</a>
+        <a href="/events.html" class="w3-bar-item w3-button">Events</a>
+        <a href="/Fashion.html" class="w3-bar-item w3-button">Fashion</a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
     <h1 class="w3-jumbo w3-animate-top">Concerts</h1>
 </body>
