@@ -1,6 +1,9 @@
 body{
     background-image: url("https://images.alphacoders.com/438/438979.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 h1{
   font-size: 60px;
@@ -44,18 +47,9 @@ p{
 
 #gif
 
-#pic{
-  border: 10 10 black;
-  border-style: double;
-  height:20%;
-  position: absolute; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 30%px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+img
+{
+width:10%;
+height:10%;
 
 }
