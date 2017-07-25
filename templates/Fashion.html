@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <head>
 <title> What's the Move? | Fashion </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style> body {background-image: url("http://wallpapercave.com/wp/b40KYP4.jpg");
-              background-size: cover;;}
+            background-size: cover;
+            background-color: black;
+            background-repeat: no-repeat;}
         h1, h3 {color: white;}
-        #border {border: 10px solid #93D0FF;
+        #border {border: 10px solid #4281A4;
                 padding: 15px;}
         img {
           height: 15%;
-          width:15%;
-        }
+          width:15%;}
+  .dropdown-submenu {
+      position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+  }
+  b {
+  }
 </style>
 </head>
 <body>
 <div id=border>
   <img src="/resources/logo1.png">
 <h1> Fashion </h1>
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Menu
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="/">Home</a></li>
+<li class="dropdown-submenu">
+      <a class="test" tabindex="-1" href="#">Events <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a tabindex="-1" href="#"><u><b>Events Home</u></b></a></li>
+        <li><a tabindex="-1" href="#">Concerts</a></li>
+        <li><a tabindex="-1" href="#">Sports</a></li>
+        <li><a tabindex="-1" href="#">Movies</a></li></ul>
+<li class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="/fashion.html">Fashion <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="/fashion.html"><u><b>Fashion Home</u></b></a></li>
+            <li><a tabindex="-1" href="/casual.html">Casual Wear</a></li>
+            <li><a tabindex="-1" href="/fitness.html">Fitness Wear</a></li>
+            <li><a tabindex="-1" href="/formal.html">Formal Wear</a></li></ul>
+<li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Food <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#"><u><b>Food Home</u></b></a></li>
+          <li><a tabindex="-1" href="#">Places To Go While on a Budget</a></li>
+          <li><a tabindex="-1" href="#">Top 5 Places to Go in Boston</a></li>
+          <li><a tabindex="-1" href="#">Desserts</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div></div>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+
+
+
+
 <h3> This is your most reliable resource that will lead you to stores that have the latest fashion trends at a low price near you!</h3>
 <p> <a href="casual.html">
       Casual Wear</a> -
