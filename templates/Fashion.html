@@ -1,10 +1,53 @@
 <!DOCTYPE html>
+<link href="events.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <head>
 <title> What's the Move? | Fashion </title>
-<style> body {background-image: url("http://wallpapercave.com/wp/b40KYP4.jpg");
-            background-size: cover;
-            background-color: black;
-            background-repeat: no-repeat;}
+<style>
+body {
+  background-image:url('/resources/clothes.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;}
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 180px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#home {
+    top: 100px;
+    background-color: #F49F0A;
+}
+
+#casual {
+    top: 170px;
+    background-color: #2196F3;
+}
+
+#fitness {
+    top: 240px;
+    background-color: #F49F0A;
+}
+
+#formal {
+    top: 310px;
+    background-color: #2196F3;
+}
+
         h1, h3 {color: white;}
         #border {border: 10px solid #4281A4;
                 padding: 15px;}
@@ -69,36 +112,42 @@
           .dropdown:hover .dropdown-content {
               display: block;
           }
+          section {
+            width: 350px;
+            height: 350px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+          }
+
 </style>
 </head>
 <body>
-<div id=border>
-  <img src="/resources/logo1.png">
-<h1> Fashion </h1>
-<div class="container">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-wide w3-padding w3-card-2">
+      <a href="/" class="w3-bar-item w3-button"><img src="/resources/logo1.png" style="width:85px;"></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <div class="barfont"><a href="/food" class="w3-bar-item w3-button">Food</a>
+        <a href="/events.html" class="w3-bar-item w3-button">Events</a>
+        <a href="/fashion.html" class="w3-bar-item w3-button">Fashion</a>
+      </div>
+      </div>
     </div>
   </div>
-  <a href="#news">Link</a>
-</div>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div id="mySidenav" class="sidenav">
+    <a href="/fashion.html" id="home">Fashion Home</a>
+    <a href="/casual.html" id="casual">Search Casual</a>
+    <a href="/fitness.html" id="fitness">Search Fitness</a>
+    <a href="/formal.html" id="formal">Search Formal</a>
+  </div>
 
-
-
-
-
-
+  <div style="margin-left:80px;"> </div>
+<br>
+<br>
+<br>
+<br>
 <h3> This is your most reliable resource that will lead you to stores that have the latest fashion trends at a low price near you!</h3>
-<p> <a href="casual.html">
-      Casual Wear</a> -
-      <a href="fitness.html">Fitness Wear</a> -
-      <a href="formal.html">Formal Wear </a> <p>
-<div>
 </body>
 </html>
