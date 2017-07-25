@@ -33,6 +33,24 @@ class FashionHandler(webapp2.RequestHandler):
             'templates/Fashion.html')
         self.response.write(template.render())
 
+class CasualHandler(webapp2.RequestHandler):
+    def get(self):
+        template=jinja_environment.get_template(
+            'templates/casual.html')
+        self.response.write(template.render())
+
+class FitnessHandler(webapp2.RequestHandler):
+    def get(self):
+        template=jinja_environment.get_template(
+            'templates/fitness.html')
+        self.response.write(template.render())
+
+class FormalHandler(webapp2.RequestHandler):
+    def get(self):
+        template=jinja_environment.get_template(
+            'templates/formal.html')
+        self.response.write(template.render())
+
 class FoodHandler(webapp2.RequestHandler):
     def get(self):
         template= jinja_environment.get_template(
@@ -49,5 +67,8 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/Fashion.html', FashionHandler),
     ('/food', FoodHandler),
-    ('/events.html', EventsHandler)
+    ('/events.html', EventsHandler),
+    ('/casual.html', CasualHandler),
+    ('/fitness.html', FitnessHandler),
+    ('/formal.html', FormalHandler),
 ], debug=True)
