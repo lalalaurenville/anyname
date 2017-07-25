@@ -1,8 +1,12 @@
+html{
+height: 100%
+}
 body
 {
   background-color:  #3CC47C;
-  background-image: url('https://media.giphy.com/media/W8FKqHAXTM3bW/source.gif');
+  background-image: url("https://i.imgur.com/X92wJjt.gifv");
   background-size: cover;
+  height: 100%;
 
 }
 h1
