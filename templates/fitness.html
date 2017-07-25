@@ -1,9 +1,45 @@
 <!DOCTYPE html>
+<link href="events.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <head>
 <style>
-img {
-  height: 15%;
-  width:15%;}
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 180px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#home {
+    top: 100px;
+    background-color: #F49F0A;
+}
+
+#casual {
+    top: 170px;
+    background-color: #2196F3;
+}
+
+#fitness {
+    top: 240px;
+    background-color: #F49F0A;
+}
+
+#formal {
+    top: 310px;
+    background-color: #2196F3;
+}
     body {
       background-image:url('/resources/fitness.png');
       background-size: cover;
@@ -12,6 +48,26 @@ img {
   <title> What's the Move? | Fashion | Semi</title>
 </head>
 <body>
-  <img src="/resources/logo1.png">
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-wide w3-padding w3-card-2">
+      <a href="/" class="w3-bar-item w3-button"><img src="/resources/logo1.png" style="width:85px;"></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <div class="barfont"><a href="/food" class="w3-bar-item w3-button">Food</a>
+        <a href="/events.html" class="w3-bar-item w3-button">Events</a>
+        <a href="/fashion.html" class="w3-bar-item w3-button">Fashion</a>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div id="mySidenav" class="sidenav">
+    <a href="/fashion.html" id="home">Fashion Home</a>
+    <a href="/casual.html" id="casual">Search Casual</a>
+    <a href="/fitness.html" id="fitness">Search Fitness</a>
+    <a href="/formal.html" id="formal">Search Formal</a>
+  </div>
+
+  <div style="margin-left:80px;"> </div>
 </body>
 </html>
