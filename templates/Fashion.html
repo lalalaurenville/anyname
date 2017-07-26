@@ -6,11 +6,17 @@
 <head>
 <title> What's the Move? | Fashion </title>
 <style>
+div.barfont
+{
+  font-family: "Raleway", sans-serif;
+  font-size: 200%
+}
 body {
   background-image:url('/resources/clothes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;}
+  background-color: black;
+  background-attachment: fixed;}
 
 #mySidenav a {
     position: absolute;
@@ -29,22 +35,22 @@ body {
 }
 
 #home {
-    top: 100px;
+    top: 250px;
     background-color: #F49F0A;
 }
 
 #casual {
-    top: 170px;
+    top: 320px;
     background-color: #2196F3;
 }
 
 #fitness {
-    top: 240px;
+    top: 390px;
     background-color: #F49F0A;
 }
 
 #formal {
-    top: 310px;
+    top: 460px;
     background-color: #2196F3;
 }
 
@@ -119,7 +125,41 @@ body {
             display: flex;
             flex-direction: column;
           }
-
+h1, h2, h3{
+  text-align: center;
+}
+h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px black;
+  text-decoration: underline;
+}
+div.transbox {
+    margin: 30px;
+    background-color: black;
+    border: 1px solid #00bfff;
+    opacity: 1;
+    position: relative;
+    left: 180px;
+    padding: 10px;
+    height: 300px;
+    width: 1050px;
+  }
+  div.picture
+  {
+    float: right;
+  }
+  div.text
+  {
+    float: left;
+    color: white;
+  }
+img{
+  height: 25%;
+  width:25%;
+}
 </style>
 </head>
 <body>
@@ -144,10 +184,24 @@ body {
   </div>
 
   <div style="margin-left:80px;"> </div>
-<br>
-<br>
-<br>
-<br>
-<h3> This is your most reliable resource that will lead you to stores that have the latest fashion trends at a low price near you!</h3>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <h1 class="w3-jumbo w3-animate-top">Fashion</h1>
+  <div class="transbox">
+      <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div>
+    <div class="text">
+    <h2><a href="/casual.html">Casual Wear</a> - <a href="/fitness.html">Fitness Wear</a> - <a href="/formal.html">Formal Wear</a></h2>
+<h2><img src="/resources/logo1.png"></h2>
+    <h3> The most reliable resource to stores with affordable fashion trends for every event in Boston!</h3>
+    </div>
+</div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
