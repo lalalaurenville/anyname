@@ -1,4 +1,173 @@
-body{
+
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+body {
+    background-image: url('http://www.johnmariani.com/archive/2011/110821/TOWNE%20Uptowne.jpg');
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 2px 3px black;
+    color: white;
+
+}
+li{
+  margin-left: 10%;
+
+}
+h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px black;
+  text-decoration: underline;
+  color: red;
+}
+div.transbox {
+  margin: 30px;
+  background-color: black;
+  border: 1px solid yellow;
+  opacity: 1;
+  position: relative;
+  left: 10px;
+  padding: 10px;
+  height: 325px;
+}
+div.picture
+{
+  float: right;
+}
+div.text
+{
+  float: left;
+  opacity: 1;
+}
+div.barfont
+{
+  font-family: "Raleway", sans-serif;
+  font-size: 200%
+}
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+
+/* Sllliiidddeeeee barrrrrrr*/
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 130px;
+    background-color: #F49F0A;
+
+}
+
+#blog {
+    top: 240px;
+    background-color: #2196F3; /* Blue */
+}
+
+#projects {
+    top:370px;
+    background-color:#F49F0A; /* Red */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
+    background-image: url("https://images.alphacoders.com/438/438979.jpg");
+    background-size: cover;
+}
+h1{
+
+  font-family: 'Bellefair', serif;
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 10px 3px black;
+/*  font-size: 75px;
+  color: #9f0000;
+  border-style: double;
+  border-color: black;
+  position: top;
+  margin-left: 300px;
+  text-shadow: 5px 1px black;  margin: 30px;
+  background-color: #ffffff;
+  border: 4px solid black;
+  opacity:1.0;
+  filter: alpha(opacity=60);*/
+}
+
+/*p{
+  font-family: 'Bellefair', serif;
+  color: white;
+  font-size: 220%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px black;
+  /*font-size: 35px;
+  color: red;
+  border-style: double;
+  margin-left: 180px;*/
+  /*border-color: black;
+  background-color: black;
+  border: 4px solid black;
+  opacity:.7;
+  filter: alpha(opacity=60);
+}
+h2{
+   font-family: 'Bellefair', serif;
+   color: white;
+   font-size: 30px;
+}
+div{
+  font-family: 'Bellefair', serif;
+font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
     background-image: url("https://images.alphacoders.com/438/438979.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +194,7 @@ h2{
   border-style: double;
   border-color: black;
   /*position: top;*/
-  margin: center;
+/*  margin: center;
   background-color: #E1EFF6;
   border: 4px solid black;
   opacity:1.0;
@@ -53,3 +222,4 @@ width:10%;
 height:10%;
 
 }
+/* Style the links inside the sidenav */

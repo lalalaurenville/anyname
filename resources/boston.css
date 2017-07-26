@@ -1,0 +1,111 @@
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+body {
+    background-image: url('http://www.johnmariani.com/archive/2011/110821/TOWNE%20Uptowne.jpg');
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 2px 3px black;
+    color: white;
+
+}
+li{
+  margin-left: 10%;
+
+}
+h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px black;
+  text-decoration: underline;
+  color: red;
+}
+div.transbox {
+  margin: 30px;
+  background-color: black;
+  border: 1px solid yellow;
+  opacity: 1;
+  position: relative;
+  left: 10px;
+  padding: 10px;
+  height: 325px;
+}
+div.picture
+{
+  float: right;
+}
+div.text
+{
+  float: left;
+  opacity: 1;
+}
+div.barfont
+{
+  font-family: "Raleway", sans-serif;
+  font-size: 200%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+
+/* Sllliiidddeeeee barrrrrrr*/
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 100px;
+    background-color: #F49F0A;
+
+}
+
+#blog {
+    top: 270px;
+    background-color: #2196F3; /* Blue */
+}
+
+#projects {
+    top:440px;
+    background-color:#F49F0A; /* Red */
+}
