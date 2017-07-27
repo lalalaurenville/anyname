@@ -39,6 +39,9 @@ div.transbox {
   padding: 10px;
   height: 325px;
 }
+p{
+  font-size: 20px;
+}
 img.picture
 {
   float: right;
