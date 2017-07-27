@@ -35,9 +35,13 @@ div.transbox {
   border: 1px solid yellow;
   opacity: 1;
   position: relative;
-  left: 10px;
+  left: 100px;
   padding: 10px;
   height: 325px;
+  width: 1130px;}
+  
+p{
+  font-size: 20px;
 }
 img.picture
 {
