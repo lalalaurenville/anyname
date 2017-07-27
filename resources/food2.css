@@ -103,6 +103,17 @@ font-size: 19px;
     top:440px;
     background-color:#F49F0A; /* Red */
 }
+div.transbox {
+    margin: 30px;
+    background-color: black;
+    border: 1px solid #00bfff;
+    opacity: 1;
+    position: relative;
+    left: 180px;
+    padding: 10px;
+    height: 300px;
+    width: 1050px;
+  }
 
 
 
