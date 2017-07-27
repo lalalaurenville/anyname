@@ -1,4 +1,3 @@
-
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 body {
@@ -16,7 +15,6 @@ li{
   margin-left: 10%;
 
 }
-
 h1
 {
   color: #286DA8;
@@ -45,18 +43,16 @@ img.picture
 }
 div.text
 {
-  /*float: left;*/
+  float: left;
   opacity: 1;
-  display:inline;
-  width: 50%;
 }
 div.barfont
 {
   font-family: "Raleway", sans-serif;
   font-size: 200%
 }
+/* START OF TAB BAR */
 
-/* Style the links inside the sidenav */
 #mySidenav a {
     position: absolute; /* Position them relative to the browser window */
     left: -80px; /* Position them outside of the screen */
@@ -77,17 +73,17 @@ div.barfont
 
 /* The about link: 20px from the top with a green background */
 #about {
-    top: 200px;
+    top: 130px;
     background-color: #F49F0A;
 
 }
 
 #blog {
-    top: 300px;
+    top: 240px;
     background-color: #2196F3; /* Blue */
 }
 
 #projects {
-    top:490px;
+    top:440px;
     background-color:#F49F0A; /* Red */
 }
