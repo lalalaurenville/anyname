@@ -7,7 +7,6 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    text-shadow: 2px 3px black;
     color: white;
 
 }
@@ -22,7 +21,7 @@ h1
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-shadow: 2px 3px black;
+  text-: 2px 3px black;
   text-decoration: underline;
   font-family: 'Bellefair', serif;
   color: white;
