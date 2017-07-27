@@ -16,6 +16,7 @@ li{
   margin-left: 10%;
 
 }
+
 h1
 {
   text-align: center;
@@ -35,44 +36,22 @@ div.transbox {
   padding: 10px;
   height: 325px;
 }
-div.picture
+img.picture
 {
   float: right;
 }
 div.text
 {
-  float: left;
+  /*float: left;*/
   opacity: 1;
+  display:inline;
+  width: 50%;
 }
 div.barfont
 {
   font-family: "Raleway", sans-serif;
   font-size: 200%
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Style the links inside the sidenav */
 #mySidenav a {
