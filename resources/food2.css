@@ -1,6 +1,10 @@
 body{
     background-image: url("https://images.alphacoders.com/438/438979.jpg");
     background-size: cover;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1{
   color: #286DA8;
